@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+html{
+font-size:62.5%;
+scroll-behavior:smooth;
+}
+
+body{
+background:#cbdcf7;
+}
+
+/* HEADER */
+header{
+position:fixed;
+top:0;
+left:0;
+right:0;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:1.5rem 10%;
+background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+header .logo{
+font-size:2rem;
+font-weight:700;
+color:#0e2431;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar ul li{
+margin-left:2rem;
+}
+
+.navbar ul li a{
+font-size:1.6rem;
+color:#0e2431;
+font-weight:600;
+}
+
+.navbar ul li a:hover{
+color:#da0416;
+}
+
+/* SECTION */
+section{
+padding:8rem 9%;
+}
+
+/* HOME */
+.home{
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+}
+
+.home .content{
+max-width:500px;
+}
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:15px;
+list-style:none;
+padding:0;
+}
+
+.social-icons i{
+font-size:24px;
+}
+
+/* Profile Image */
+.home img{
+width:200px;
+height:auto;
+margin-top:20px;
+border-radius:10px;
+}
+
+
+
+
+/* button add box shadow */
+.btn{
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #000;   /* box border */
+    border-radius: 8px;       /* round corner */
+    background-color: #f4f4f4;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* Center the download button when printing */
+.center-btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* pdf formate */
+.biodata{
+max-width:800px;
+margin:auto;
+background:#fff;
+padding:20px;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+.home{
+flex-direction:column;
+}
+
+.home img{
+width:150px;
+}
+
+}
+
+/* SOCIAL ICONS */
+.social-icons{
+margin-top:2rem;
+}
+
+.social-icons li{
+display:inline-block;
+margin-right:10px;
+}
+
+.social-icons a{
+display:inline-block;
+width:40px;
+height:40px;
+line-height:40px;
+text-align:center;
+background:#000;
+color:#fff;
+border-radius:50%;
+font-size:18px;
+}
+
+.social-icons{
+list-style:none;
+display:flex;
+gap:15px;
+}
+
+.social-icons i{
+font-size:24px;
+}
+
+/* Facebook */
+.fa-facebook{
+color:#1877F2;
+}
+
+/* Instagram (gradient like real logo) */
+.fa-instagram{
+background: radial-gradient(circle at 30% 107%,
+#fdf497 0%,
+#fdf497 5%,
+#fd5949 45%,
+#d6249f 60%,
+#285AEB 90%);
+background-clip:text;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+color:transparent;
+}
+
+/* LinkedIn */
+.fa-linkedin{
+color:#0A66C2;
+}
+
+/* GitHub */
+.fa-github{
+color:#181717;
+}
+
+/* BIODATA */
+.about{
+background:#fff;
+}
+
+.biodata{
+max-width:900px;
+margin:auto;
+background:#fff;
+padding:30px;
+border:2px solid #caa35a;
+}
+
+.title{
+text-align:center;
+font-size:3rem;
+color:#8b5a2b;
+margin-bottom:25px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.column h2{
+font-size:2rem;
+color:#8b5a2b;
+border-bottom:2px solid #caa35a;
+margin-bottom:10px;
+padding-bottom:5px;
+}
+
+.column p{
+font-size:1.6rem;
+margin:6px 0;
+}
+
+.column span{
+font-weight:700;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.home{
+flex-direction:column;
+text-align:center;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.home .image img{
+max-width:250px;
+}
+
+}
+
+/* PRINT */
+@media print{
+
+header,
+.home{
+display:none;
+}
+
+body{
+background:#fff;
+}
+
+.biodata{
+border:none;
+padding:10px;
+}
+
+
+
+
+}
